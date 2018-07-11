@@ -3,6 +3,9 @@
 
 var servers = ['nats://127.0.0.1:4222'];
 var nats = require('nats');
+const fs = require('fs');
+const util = require('util');
+
 // Randomly connect to a server in the cluster group.
 var nc = nats.connect({
   'servers': servers
@@ -31,5 +34,6 @@ if (!subject) {
 console.log('Listening on [' + subject + ']');
 
 nc.subscribe(subject, function(msg) {
+  fs.appendFileSync('./output/result.txt', util.format('Client: 4222, Subject: %s, MSG: %s, Received At: %s\n', subject,  msg, new Date()));
   console.log('Received for 4222"' + msg + '"');
 });
