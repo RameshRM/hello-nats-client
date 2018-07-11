@@ -30,3 +30,25 @@ cd hello-nats-client
 
 
 ## Installation
+
+`npm install`
+
+## Run
+
+### Publisher
+
+`node publisher.js`
+
+### Subscriber
+
+#### First
+
+`node subscriber-one.js`
+
+#### Second
+
+`node subscriber-two.js`
+
+### Summary
+
+Results are stored in `output/result1.txt` for 1st Subscriber & `output/result2.txt` for 2nd Subscriber.
