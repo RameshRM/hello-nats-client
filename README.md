@@ -7,23 +7,24 @@
 
 ## Configure Servers
 
-1. Create Server 1 [server1.conf](https://gist.github.com/RameshRM/4b124c6851cadf81768aa47106e49acb#file-server1-conf)
+1. Create Server 1 [server1.conf](./conf/server1.conf)
 
-2. Create Server 2 [server2.conf](https://gist.github.com/RameshRM/4b124c6851cadf81768aa47106e49acb#file-server2-conf)
+2. Create Server 2 [server2.conf](./conf/server2.conf)
 
 ## Start Servers
 
 > Download the `Configuration` files from above links to `$(pwd)`
 
 ```shell
-gnatsd -config server1.conf -D
-gnatsd -config server2.conf -D
+./server.sh --Starts 1st Server
+./server2.sh --Starts 2nd Server
 ```
 
 # Client Setup
 
 ```
 git clone https://github.com/RameshRM/hello-nats-client.git
+
 cd hello-nats-client
 
 ```
