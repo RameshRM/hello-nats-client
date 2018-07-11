@@ -34,6 +34,6 @@ if (!subject) {
 console.log('Listening on [' + subject + ']');
 
 nc.subscribe(subject, function(msg) {
-  fs.appendFileSync('./output/result.txt', util.format('Client: 4222, Subject: %s, MSG: %s, Received At: %s\n', subject,  msg, new Date()));
+  fs.appendFileSync('./output/result1.txt', util.format('Client: 4222, Subject: %s, MSG: %s, Received At: %s\n', subject,  msg, new Date()));
   console.log('Received for 4222"' + msg + '"');
 });

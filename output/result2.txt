@@ -1,0 +1,2 @@
+Client: 5222, Subject: foo, MSG: bar, Received At: Tue Jul 10 2018 17:12:50 GMT-0700 (PDT)
+Client: 5222, Subject: foo, MSG: bar, Received At: Tue Jul 10 2018 17:13:21 GMT-0700 (PDT)
